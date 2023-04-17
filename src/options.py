@@ -9,7 +9,7 @@ class Options:
     @property
     def username(self):
         if not self._username:
-            raise ValueError("Username not set")
+            raise ValueError("Username is not set")
         return self._username
     
     @username.setter
@@ -19,7 +19,7 @@ class Options:
     @property
     def password(self):
         if not self._password:
-            raise ValueError("Password not set")
+            raise ValueError("Password is not set")
         return self._password
     
     @password.setter
@@ -29,7 +29,7 @@ class Options:
     @property
     def host(self):
         if not self._host:
-            raise ValueError("Host not set")
+            raise ValueError("Host is not set")
         return self._host
     
     @host.setter
@@ -39,7 +39,7 @@ class Options:
     @property
     def port(self):
         if not self._port:
-            raise ValueError("Port not set")
+            raise ValueError("Port is not set")
         return self._port
     
     @port.setter
@@ -49,7 +49,7 @@ class Options:
     @property
     def database(self):
         if not self._database:
-            raise ValueError("Database not set")
+            raise ValueError("Database is not set")
         return self._database
     
     @database.setter
