@@ -11,7 +11,7 @@ class Tool:
     def connect(self):
         self.conn = self.mysql_connector.connect(
             user=self.options.username,
-            password=self.options.username,
+            password=self.options.password,
             host=self.options.host,
             port=self.options.port,
             database=self.options.database,
