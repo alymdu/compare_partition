@@ -7,8 +7,8 @@ password = "12345"
 port = 3306
 database = "test"
 
+
 def main():
-    
     options = Options(
         username=user,
         password=password,
@@ -19,11 +19,11 @@ def main():
 
     db = Tool(options)
     db.connect()
-    
+
     my_query = "SELECT 12;"
 
     cur = db.query(my_query, param=None)
-    
+
     result = cur.fetchall()
     print(result)
 
